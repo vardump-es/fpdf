@@ -1,0 +1,18 @@
+[{
+	"nombre" : "Juan Pérez",
+	"edad" : 32,
+	"id_cliente" : 3412	
+},{
+	"nombre" : "José Fernández",
+	"edad" : 23,
+	"id_cliente" : 3413	
+},{
+	"nombre" : "Mariano Expósito",
+	"edad" : 44,
+	"id_cliente" : 3414
+},{
+	"nombre" : "María Del Valle",
+	"edad" : 46,
+	"id_cliente" : 3415	
+}
+]
