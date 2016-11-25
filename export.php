@@ -44,4 +44,32 @@ class ExportPDF extends FPDF{
 		$this->starty = self::comienzoTabla;
 	}
 
+	//funcion que dibuja la tabla en cuestión
+	private function dibujarTabla(){
+
+		//columna identificador cliente
+		//se posiciona el cursor
+		$this->setXY(10,self::comienzoTabla);
+		//se hace un cuadro de texto (ancho, alto, texto, bordes, alineación del texto)
+		$this->MultiCell(20,5,'ID',1,'C');
+		// se dibuja la columna
+		$this->Rect(10,self::comienzoTabla,30,self::limitePagina);
+
+		//columna nombre
+		//se posiciona el cursor
+		$this->setXY(30,self::comienzoTabla);
+		//se hace un cuadro de texto 
+		$this->MultiCell(100,5,'Nombre',1,'C');
+		// se dibuja la columna
+		$this->Rect(30,self::comienzoTabla,30,self::limitePagina)
+
+		//columna edad
+		//se posiciona el cursor
+		$this->setXY(130,self::comienzoTabla);
+		//se hace un cuadro de texto 
+		$this->MultiCell(10,5,'Edad',1,'C');
+		// se dibuja la columna
+		$this->Rect(30,self::comienzoTabla,30,self::limitePagina)
+	}
+
 }
